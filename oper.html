@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		 function add(a,b) {
+			return parseInt(a+b);
+		}
+		function avrg(c,d)
+		{
+			return parseFloat(add(c,d)/2);
+		}
+		function checkzero(a) {
+			if (a == 0) {
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		function odd(b) {
+			if(b % 2 != 0){
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		function getnumber()
+		{
+			var n = prompt("enter the value");
+			return parseInt(n);
+		}
+		var a=getnumber();
+		var b=getnumber();
+		console.log(add(a,b));
+		console.log(avrg(a,b));
+		console.log(checkzero(a));
+		console.log(odd(b));
+</script>
+</head>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vowel count</title>
+	<script>
+		function vowel_count()
+		{
+			var str=document.getElementById("str").value;
+			var vcount = 0;
+			for(var x = 0; x < str.length; x++)
+			{
+				if ((str[x]=='a')||(str[x]=='e')||(str[x]=='i')||(str[x]=='o')||(str[x]=='u')||(str[x]=='A')||(str[x]='E')||(str[x]='I')||(str[x]=='O')||(str[x]=='U'))
+				{
+					vcount += 1;
+				}
+			}
+			console.log(vcount);
+		}
+	</script>
+</head>
+<body>
+	<h2>Enter name</h2>
+	<form>
+		<input id="str" type="text">
+		<input type="button" value="submit" onclick="vowel_count()">
+	</form>
+</body>
+</html>

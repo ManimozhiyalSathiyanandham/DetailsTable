@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biggest and Smallest of two numbers</title>
+	<script>
+		function difference(numbers)
+		{
+
+
+const smallest_number = Math.min(...numbers);
+const largest_number = Math.max(...numbers);
+
+console.log('Smallest Value:', smallest_number); 
+console.log('Largest Value:', largest_number);   
+var result = largest_number - smallest_number; 
+console.log(result);
+
+		}
+		const numbers = [69, 4, 9, 2, 23, 16, 24];
+		difference(numbers);
+	</script>
+</head>
+</html>
